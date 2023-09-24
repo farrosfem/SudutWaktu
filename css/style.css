@@ -72,7 +72,9 @@ body {
 
 /* hero section start */
 
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .hero .slideshow-container {
@@ -158,8 +160,12 @@ body {
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* .hero {
@@ -255,7 +261,6 @@ body {
   color: var(--primary);
   justify-content: center;
   align-items: center;
-  
 }
 
 .about .h1about2 #misi1 {
@@ -285,22 +290,21 @@ body {
   margin-top: 2rem;
 }
 
-.about .h1about2 .visi{
+.about .h1about2 .visi {
   margin-left: 250px;
   margin-right: 120px;
   margin-top: 2rem;
-  margin-bottom: 2rem;}
+  margin-bottom: 2rem;
+}
 
 .about .h1about2 p {
   text-align: justify;
   position: relative;
-
 }
 
 /* about end */
 
 /*prduct start*/
-
 
 .flex-container {
   display: flex;
@@ -308,7 +312,7 @@ body {
   background-color: var(--bg);
 }
 
-.flex-container> div {
+.flex-container > div {
   background-color: #76353599;
   width: 600px;
   height: 850px;
@@ -318,12 +322,10 @@ body {
   font-size: 30px;
   padding: 25px;
   border-radius: 10px;
-
 }
 
-.flex-container> div:hover {
+.flex-container > div:hover {
   background-color: #ac545499;
-
 }
 
 .flex-container .img1 {
@@ -334,22 +336,22 @@ body {
   margin: 145px 0px 0px 0px;
 }
 
-.flex-container> div> img {
+.flex-container > div > img {
   border-radius: 50%;
-} 
+}
 
-.flex-container> div> P> a {
+.flex-container > div > P > a {
   color: var(--primary);
   text-decoration: none;
   position: relative;
   padding: 0 10px;
 }
 
-.flex-container> div> p> a:hover {
+.flex-container > div > p > a:hover {
   color: var(--primary);
 }
 
-.flex-container> div> p> a::after{
+.flex-container > div > p > a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -357,22 +359,22 @@ body {
   background-color: var(--primary);
   width: 0;
   height: 3px;
-  transition: 0.3s ;
+  transition: 0.3s;
 }
 
-.flex-container> div> p> a:hover::after {
+.flex-container > div > p > a:hover::after {
   width: 100%;
 }
 
-.flex-container> div> h3 {
+.flex-container > div > h3 {
   color: var(--primary);
 }
 
-.flex-container> div> h3:hover {
+.flex-container > div > h3:hover {
   color: var(--primary);
 }
 
-.flex-container> div> h3::after{
+.flex-container > div > h3::after {
   content: "";
   display: block;
   padding-bottom: 0.5rem;
@@ -381,20 +383,19 @@ body {
   transition: 0.3s linear;
 }
 
-.flex-container> div> h3:hover::after {
+.flex-container > div > h3:hover::after {
   transform: scaleX(0.5);
 }
 
 /*product end*/
 
- /* wujud kan mimpi section start  */
+/* wujud kan mimpi section start  */
 .wujudkan {
   text-align: center;
   margin-top: 10rem;
 }
 
-.wujudkan .wujud-h1  {
-
+.wujudkan .wujud-h1 {
   color: var(--primary);
 }
 
@@ -427,45 +428,41 @@ body {
   text-decoration: none;
   color: #fff;
   text-align: left;
-  
 }
 
-.wujudkan .sosmed1 div  {
+.wujudkan .sosmed1 div {
   margin: 10px;
-  
 }
- /* wujud kan mimpi section end  */
+/* wujud kan mimpi section end  */
 
- /* footer start */
- .footerlist {
+/* footer start */
+.footerlist {
   display: flex;
   text-align: center;
   justify-content: space-between;
-  margin-top: 200px;
-  margin-bottom: 200px;
- }
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 
- .footerlist div {
+.footerlist div {
   margin: auto;
   text-align: center;
-  
- }
+}
 
- .footerlist div h2 {
+.footerlist div h2 {
   padding-bottom: 10px;
- }
+}
 
- .footerlist div a p {
+.footerlist div a p {
   text-decoration: none;
   color: var(--primary);
-  
- }
+}
 
 footer {
   text-align: center;
 }
 
-footer p a{
+footer p a {
   text-decoration: none;
   color: #ff9900;
 }
@@ -479,3 +476,62 @@ footer h3 {
 }
 
 /* footer end */
+
+/* media queris */
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0, 3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scalex(0.2);
+  }
+
+  .about {
+    flex-wrap: wrap;
+  }
+
+  .about .h1about h1 {
+    padding: 0px;
+background-color: #fff;
+  }
+  
+
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
