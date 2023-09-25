@@ -97,6 +97,7 @@ html, body {
   align-items: center;
   justify-content: center;
   margin: auto;
+  margin-top: 6.5rem;
 }
 
 /* Hide the images by default */
@@ -517,7 +518,7 @@ html, body {
   }
 
   .navbar .navbar-nav {
-    margin-top: -51rem;
+    margin-top: -1rem;
     position: absolute;
     top: 100%;
     right: -100%;
@@ -597,8 +598,8 @@ html, body {
   }
 
   .about .h1about2 .visi {
-    margin-left: 7rem;
-    margin-right: 2rem;
+    margin-left: 4.5rem;
+    margin-right: 3.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
