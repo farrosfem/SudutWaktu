@@ -17,6 +17,7 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
   font-family: "Inter", sans-serif;
   background-color: var(--bg);
   color: #fff;
@@ -558,6 +559,7 @@ footer h3 {
 
   .about .h1about2 {
     display: flex;
+    width: 100%;
   }
 
   .about .h1about2 #misi1 {
