@@ -575,7 +575,7 @@ html, body {
     border-bottom: 3px solid;
 
     border-color: #ff9900;
-    margin-left: 7rem;
+    margin-left: 5rem;
     margin-right: 3rem;
     margin-top: 2rem;
   }
@@ -585,21 +585,21 @@ html, body {
     border-bottom: 3px solid;
 
     border-color: #ff9900;
-    margin-left: 9rem;
+    margin-left: 3rem;
     margin-right: 5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
   .about .h1about2 .misi {
-    margin-left: 4rem;
-    margin-right: -1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-top: 2rem;
   }
 
   .about .h1about2 .visi {
-    margin-left: 4.5rem;
-    margin-right: 3.5rem;
+    margin-left: 1.5rem;
+    margin-right: 4rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
